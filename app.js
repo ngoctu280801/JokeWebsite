@@ -4,8 +4,9 @@ import { engine } from 'express-handlebars';
 import hbs_sections from 'express-handlebars-sections';
 import contentModel from './models/content.model.js'
 import cookiesParser from 'cookie-parser'
+import envVar from './utils/envVar.js';
 const app = express();
-const port = 3000;
+const port = envVar.PORT;
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
