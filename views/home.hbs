@@ -1,0 +1,31 @@
+
+    <div class="sentences">
+        <p>{{content.content}}</p>
+    </div>
+    <hr  class="line-top-btn" >
+    <div class="btn-reply">
+        <form id="resVoteFun" method="post">
+            <button type="submit" class="btn-fun btn btn-primary">This is Funny!</button>
+            <input type="hidden" id="txtVoteFun" name="vote" value="1">
+            <input type="hidden" id="txtIDfun" name="id" value="{{content.id}}">
+        </form>
+        <form id="resVoteNotFun" method="post">
+            <button type="submit" class="btn-not-fun btn btn-success">This is not funny.</button>
+            <input type="hidden" id="txtVoteNotFun" name="vote" value="0">
+            <input type="hidden" id="txtIDnotfun" name="id" value="{{content.id}}">
+        </form>
+
+    </div>
+
+{{#section 'js'}}
+    <script>
+        $('.btn-fun').on('click', function () {
+            $('#resVoteFun').submit();
+        });
+        $('.btn-note-fun').on('click', function () {
+            // const id = 0;
+            // $('#txtVote').val(id);
+            $('#resVoteNotFun').submit();
+        });
+    </script>
+{{/section}}
