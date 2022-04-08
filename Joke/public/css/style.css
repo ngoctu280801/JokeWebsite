@@ -1,0 +1,92 @@
+html,body{
+    margin: 0;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+.img.img_logo{
+    margin-left: 280px;
+}
+.handicraft{
+    font-style: italic;
+    color: #ccc;
+    padding-top:24px;
+    font-size:12px;
+    margin: 0;
+}
+.JimHlS{
+    font-size:12px;
+    text-align: right;
+    font-weight: bold;
+}
+.author{
+    margin-right: 280px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(7, 136, 7, 0.66);
+    height:200px;
+    flex-direction: column;
+}
+.slogan,.sub_slogan{
+    color: #fff;
+}
+
+.sentences,.btn-reply{
+    margin: 40px 300px;
+}
+.line-top-btn{
+    width:50%;
+    text-align: center;
+    margin-left:auto!important;
+    margin-right:auto!important;
+}
+.btn-reply{
+    display: flex;
+    justify-content: center;
+    margin-bottom:80px;
+}
+.btn-fun, .btn-not-fun{
+    padding: 5px 50px!important;
+    border-radius: 0!important;
+    box-shadow: 1px 1px 1px #050550;
+}
+.btn-fun{
+    margin-right:50px;
+}
+.btn-not-fun{
+    margin-left: 50px;
+}
+.footer{
+    align-items: center;
+    margin: 30px 300px;
+    text-align: center;
+}
+.des-copyright{
+    font-size:12px;
+    color: #646464;
+}
+.copyright{
+    margin-bottom: 0;
+    font-size:12px;
+}
+hr{
+    margin: 32px!important;
+}
+.message{
+    font-size:24px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin:100px 0;
+}
